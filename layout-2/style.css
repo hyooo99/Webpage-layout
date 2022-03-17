@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container {
+    display: grid;
+    grid-gap: 20px;
+    margin: 10px;
+    height: 100vh;
+    grid-template-areas: 'header header'
+                         'menu menu'
+                         'section top'
+                         'section bottom'
+                         'footer footer';
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 130px 100px 250px 250px 100px;
+}
+#container div {
+    padding: 20px;
+    border: 1px solid black;
+}
+#header {
+    grid-area: header;
+}
+#nav {
+    grid-area: menu;
+}
+#section {
+    grid-area: section;
+}
+#top {
+    grid-area: top;
+}
+#bottom {
+    grid-area: bottom;
+}
+#footer {
+    grid-area: footer;
+}

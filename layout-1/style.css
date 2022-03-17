@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container {
+    display: grid;
+    grid-gap: 20px;
+    height: 100vh;
+    grid-template-columns: 150px 1fr 350px;
+    grid-template-rows: 130px 100px 150px 1fr 100px;
+    grid-template-areas: 'header header header'
+                         'nav nav nav'
+                         'lsi section top'
+                         'lsi section middle'
+                         'lsi section bottom'
+                         'footer footer footer';
+}
+div {
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+#header {
+
+    grid-area: header;
+}
+#nav {
+
+    grid-area: nav;
+}
+#section {
+
+    grid-area: section;
+}
+#lsi {
+
+    grid-area: lsi;
+}
+#top {
+
+    grid-area: top;
+}
+#middle {
+
+    grid-area: middle;
+}
+#bottom {
+
+    grid-area: bottom;
+}
+#footer {
+
+    grid-area: footer;
+}
